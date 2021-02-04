@@ -1,0 +1,22 @@
+language: node_js
+
+node_js: 10
+
+install:
+  - npm ci
+
+script:
+  - npm run lint
+  - npm run test
+  - cat ./coverage/lcov.info | npx coveralls
+  - npm run compile
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
+  on:
+    tags: false
+    repo: sparkplug/momoapi-node
+    branch: master
