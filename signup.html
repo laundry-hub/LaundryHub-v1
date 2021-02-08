@@ -1,22 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <!-- <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico"> -->
+<head>
+  <meta charset="utf-8">
 
-    <title>Pay</title>
 
-    <!-- Bootstrap core CSS -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="css\styles.css" rel="stylesheet">
-  </head>
+  <title>Laundry-Hub</title>
 
-  <body class="text-center">
-    <form action="/" class="form-signin" method="POST">
+  <!-- Kit-code from Font Awesome -->
+  <script src="https://kit.fontawesome.com/311170a27e.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-danger">
+    <a class="navbar-brand" href="#">Laundry-Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Dry Cleaning">Dry Cleaning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Laundry">Laundry</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Press Only">Press only</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Pricing">Pricing</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </nav>
+
+  <section id="header">
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <h1 class="belownav display-4 font-weight-normal">Get yourself Quality Laundry Services.</h1>
+        <button type="button" class="btn btn-lg btn-danger " class="display-5"><a style="color: white;"
+            href="#Pricing">Pricing</a></button>
+      </div>
+
+      <div class="col-lg-6">
+        <img src="images\suade shoe.jpg" class="image-title" alt="cool shoe">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="shoes">
+
+    <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Great texture</h2>
+        <p class="lead">You can feel the warm sipping into your veins.</p>
+      </div>
+      <div class="bg-black shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;margin-bottom: 20px;"
+        class="shadowBox"><img class="inputimages" src="images\blackssuit.jpg" alt=""></div>
+    </div>
+
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">All Natural</h2>
+        <p class="lead">You don't need to think about it.</p>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;margin-bottom: 20px;"><img
+          class="inputimages" src="images\rred.jpg" alt=""></div>
+    </div>
+
+  </section>
+
+  <section id="clothes">
+    <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Don't Miss out</h2>
+        <p class="lead">Theres just something about them.</p>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;margin-bottom: 20px;"><img
+          class="inputimages" src="images\coolshirt.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <section id="handaccesories">
+    <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">You Ask</h2>
+        <p class="lead">We Provide, Simple.</p>
+      </div>
+      <div class="shadowBox bg-light shadow-sm mx-auto"
+        style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;margin-bottom: 20px;"><img class="inputimages"
+          src="images\suadeshoe2.jpg" alt=""></div>
+    </div>
+  </section>
+
+  <section id="Pricing" id="Dry Cleaning">
+    <div class="jumbotron" id="Dry Cleaning">
+      <div class="container">
+        <h1 class="display-3">DRY CLEANING</h1>
+        
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Gents suit 2 pc / 3 pc</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\rred.jpg" alt="">
+            <h1 class="card-title pricing-card-title">from Ugx25000 <small class="text-muted">/ item</small></h1>
+          <input type="text" placeholder="Number of items " class="topBottom form-control" id="inputId" required autofocus>
+            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Add Number</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Ladies Trouser suit 3pc</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\suadeshoe2.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx22000 <small class="text-muted">/ item</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-danger">Add Number</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Gent's trousers</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\coolshirt.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx12000<small class="text-muted">/ item</small></h1>
+           
+            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+          </div>
+          
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Ladies's trousers</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\coolshirt.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx11000<small class="text-muted">/ item</small></h1>
+            
+            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+          </div>
+          
+        </div>
+        
+      </div>
+  </section>
+
+  <section id="Laundry">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">LAUNDRY</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Shirt</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\rred.jpg" alt="">
+            <h1 class="card-title pricing-card-title">from Ugx11000 <small class="text-muted">/ item</small></h1>
+            
+            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Add Number</button>
+          </div>
+        </div>
+        
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Pants</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\coolshirt.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx11000<small class="text-muted">/ item</small></h1>
+            
+            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+          </div>
+          
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Khaki trouser</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\coolshirt.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx12000<small class="text-muted">/ item</small></h1>
+            
+            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+          </div>
+          
+        </div>
+        
+      </div>
+  </section>
+
+  <section id="Press Only">
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">PRESS ONLY</h1>
+        
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Men’s suit 2pc/3pc</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\rred.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx14500 <small class="text-muted">/ item</small></h1>
+            
+            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Add Number</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Woman’s suit 2pc / 3pc</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\suadeshoe2.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx13000<small class="text-muted">/ item</small></h1>
+           
+            <button type="button" class="btn btn-lg btn-block btn-danger">Add Number</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Junior suit 2pc/3pc</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\coolshirt.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx8500<small class="text-muted">/ item</small></h1>
+            
+            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+          </div>
+          
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Trousers</h4>
+          </div>
+          <div class="card-body">
+            <img class="priceimages" src="images\coolshirt.jpg" alt="">
+            <h1 class="card-title pricing-card-title">Ugx8000<small class="text-muted">/ item</small></h1>
+
+            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+          </div>
+          
+        </div>
+        
+      </div>
+  </section>
+
+	<form action="/" class="form-signin" method="POST">
       <img class="mb-4" src="images\mtn-logo.jpg" alt="" width="72" height="72">
       <h1 class="h3 mb-3 font-weight-normal">Pay for Service Delivered</h1>
     
@@ -26,5 +306,22 @@
       <button class="btn btn-dark btn-sm btn-block" type="submit">Pay</button>
       <p class="mt-5 mb-3 text-muted">&copy; Laundry Hub</p>
     </form>
-  </body>
+	
+  <footer id="footer">
+    <a href="#"><i class="fab fa-twitter   social-icon "></i></a><!-- twitter -->
+   <a href="#"><i class="fab fa-facebook-f social-icon  "></i></a><!--  facebook -->
+   <a href="#"><i class="fab fa-instagram  social-icon "></i></a><!--  instagram -->
+   <a href="#"><i class="fas fa-envelope   social-icon"></i></a><!--  envelope-->
+     <p id = "yer" class = "">© Copyright 2021 Laundry-Hub</p>
+ 
+   </footer>
+
+</body>
+  <script>
+  window.onload = function(){
+           var day = new Date();
+          var year = day.getFullYear();
+          var yer = "© Copyright" + year +"Laundry-Hub";
+          document.getElementById("Copyright").innerHTML = yer ;
+        };</script>
 </html>
