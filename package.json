@@ -11,6 +11,10 @@
     "express": "^4.17.1",
     "mongoose": "^5.11.14",
     "mtn-momo": "^1.0.6",
+    "node-uber": "^2.0.0",
+    "node-uber-rider": "^1.0.2",
+    "postmates": "^1.0.2",
+    "postmates-node": "^1.0.3",
     "request": "^2.88.2",
     "uuid": "^8.3.2"
   },

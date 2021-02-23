@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
   <title>Laundry-Hub</title>
@@ -52,10 +52,13 @@
           <a class="nav-link" href="#Laundry">Laundry</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Press Only">Press only</a>
+          <a class="nav-link" href="#CreateDelivery">Create Delivery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Pricing">Pricing</a>
+          <a class="nav-link" href="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pay">Pay</a>
         </li>
 
       </ul>
@@ -143,8 +146,6 @@
           <div class="card-body">
             <img class="priceimages" src="images\rred.jpg" alt="">
             <h1 class="card-title pricing-card-title">from Ugx25000 <small class="text-muted">/ item</small></h1>
-          <input type="text" placeholder="Number of items " class="topBottom form-control" id="inputId" required autofocus>
-            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Add Number</button>
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -157,7 +158,7 @@
             <ul class="list-unstyled mt-3 mb-4">
 
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-danger">Add Number</button>
+            
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -168,7 +169,7 @@
             <img class="priceimages" src="images\coolshirt.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx12000<small class="text-muted">/ item</small></h1>
            
-            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+            
           </div>
           
         </div>
@@ -180,7 +181,7 @@
             <img class="priceimages" src="images\coolshirt.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx11000<small class="text-muted">/ item</small></h1>
             
-            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+            
           </div>
           
         </div>
@@ -204,7 +205,7 @@
             <img class="priceimages" src="images\rred.jpg" alt="">
             <h1 class="card-title pricing-card-title">from Ugx11000 <small class="text-muted">/ item</small></h1>
             
-            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Add Number</button>
+            >
           </div>
         </div>
         
@@ -216,7 +217,7 @@
             <img class="priceimages" src="images\coolshirt.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx11000<small class="text-muted">/ item</small></h1>
             
-            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+            
           </div>
           
         </div>
@@ -228,7 +229,7 @@
             <img class="priceimages" src="images\coolshirt.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx12000<small class="text-muted">/ item</small></h1>
             
-            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+            
           </div>
           
         </div>
@@ -254,7 +255,7 @@
             <img class="priceimages" src="images\rred.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx14500 <small class="text-muted">/ item</small></h1>
             
-            <button type="button" class="btn btn-lg btn-block btn-outline-danger">Add Number</button>
+            >
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -265,7 +266,7 @@
             <img class="priceimages" src="images\suadeshoe2.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx13000<small class="text-muted">/ item</small></h1>
            
-            <button type="button" class="btn btn-lg btn-block btn-danger">Add Number</button>
+            
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
@@ -276,7 +277,7 @@
             <img class="priceimages" src="images\coolshirt.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx8500<small class="text-muted">/ item</small></h1>
             
-            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+            
           </div>
           
         </div>
@@ -288,7 +289,7 @@
             <img class="priceimages" src="images\coolshirt.jpg" alt="">
             <h1 class="card-title pricing-card-title">Ugx8000<small class="text-muted">/ item</small></h1>
 
-            <button type="button" class="btn btn-lg btn-block btn-danger">Contact us</button>
+            
           </div>
           
         </div>
@@ -296,16 +297,16 @@
       </div>
   </section>
 
-	<form action="/" class="form-signin" method="POST">
-      <img class="mb-4" src="images\mtn-logo.jpg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Pay for Service Delivered</h1>
-    
-      <input type="phoneNumber"  class="form-control top" name="phoneNumber" placeholder="Phone Number" required autofocus>
-      <!-- <input type="lastName" class="form-control middle" name="amount" placeholder="Amount" required> -->
-      <input type="Amount"  class="form-control bottom" name="amount" placeholder="Amount" required autocomplete="off">
-      <button class="btn btn-dark btn-sm btn-block" type="submit">Pay</button>
-      <p class="mt-5 mb-3 text-muted">&copy; Laundry Hub</p>
-    </form>
+	<form id="CreateDelivery" action="/quote" class="form-signin" method="POST" style="
+  padding-top: 200px;
+">>
+    <h1 class="h3 mb-3 font-weight-normal">Create Delivery</h1>
+  
+    <input type="pickupAddress"  class="form-control top" name="pickupAddress" placeholder="pickupAddress"  autofocus>
+    <input type="dropoffAddress" class="form-control middle" name="dropoffAddress" placeholder="dropoffAddress" >
+
+    <button class="btn btn-dark btn-sm btn-block" type="submit">Create Delivery</button>
+  </form>
 	
   <footer id="footer">
     <a href="#"><i class="fab fa-twitter   social-icon "></i></a><!-- twitter -->
