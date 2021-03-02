@@ -37,6 +37,7 @@ let DELIVERYID = 0;
 let PICKUP_ADDRESS = 0;
 let DROPOFFADDRESS = 0;
 
+//Temporary arrays to store data
 let deliveries = [];
 var deliveriesCreated = [];
 var deliveriesFees = [];
@@ -44,10 +45,12 @@ var deliveriesdropoffdeadline = [];
 var deliveriesIds = [];
 var deliveriesStatuses = [];
 
+//app root 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/signUp.html");
 });
 
+//create quote to determine trip charges and redirect to create delivery page.
 app.post("/quote", (req, response) => {
   var pickupAddress = req.body.fName; //All this is possible because of body-parser which gets data from the body of html element "form"
   var dropoffAddress = req.body.lName;
@@ -102,6 +105,7 @@ app.post("/createDelivery", (req, respo) => {
     quote_id: QUOTEID,
   };
 
+  //create delivery
   postmates.new(delivery, function (err, res) {
     if (err) {
       console.log(err);
